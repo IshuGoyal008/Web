@@ -2,87 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photographer Blog</title>
+    <title>The Promise Playground</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <div class="logo">
-            <i class="fa-solid fa-camera"></i>
-            <h1>IMAGE</h1>
-        </div>
+        <h1>Promises in JS</h1>
         <nav>
             <ul>
-                <a href="#home"><li>Home</li></a>
-                <a href="#about"><li>About</li></a>
-                <a href="#blogs"><li>Blogs</li></a>
-                <a href="#plans"><li>Plans</li></a>
-                <a href="#gallery"><li>Gallery</li></a>
-                <a href="#contact"><li>Contact Us</li></a>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">SignUp</a></li>
+                <li><a href="#">Search</a></li>
             </ul>
         </nav>
-        <div class="book">
-            BOOK TRIAL
-        </div>
     </header>
-    <main>
-    <section class="p">
-        <h2>Photographer's Blog</h2>
-        <p>Lorem e, voluptate suscipit? Hic, similique aperiam in consequuntur repudiandae dignissimos sunt.</p>
+    
+    <section id="about">
+        <b><h2>Why Promises?</h2></b>
+        <p>Promises are used to tackle the problem of Callback hell which is created because of using multiple callback functions. </p>
+        <img src="./1.jpg" height="300px" width="800px" >
     </section>
-    <div class="cards" id="cards">
-        <div class="card c1">
-            <!-- <img src="./images/nature1.avif" alt="nature 1" width="100%" height="100%"> -->
+
+    
+    
+    <section id="tutorials">
+        <h2>Syntax:</h2>
+        <div class="t">
+            
+            <p>For using a promise, You use a <i>new Promise()</i> constructor. It returns a promise. <i>new Promise()</i> accepts a function. This function have an two arguments <i>resolve and reject</i>. This function calls immediately that’s why we use a <i>setTimeout()</i>. It accepts two arguments a function and time in milliseconds.
+                <b>Note:-</b> resolve and reject are also functions.
+                </p>
+
+                <img src="./2.jpg" alt="" height="300px" width="800px">
         </div>
-        <div class="card c2">
-            <!-- <img src="./images/nature2.avif" alt="nature 1" width="100%" height="100%"> -->
+        
+       
+    </section>
+    
+    <section id="resources">
+        <h2>Resolve:</h2>
+        <div class="r">
+           
+            <p>Whenever we get data, we can use this <i>resolve</i> function. We can pass data as an argument within the resolve function. This data is handle by <i>.then()</i> method inside the promise object. All the work that is done by resolve is defined inside .then(). We write a function inside .then() in which we can catch our data and console it.</p>
+            
+            <img src="./3.jpg" alt="" height="300px" width="800px">
         </div>
-        <div class="card c3">
-            <!-- <img src="./images/n3.avif" alt="nature 1" width="100%" height="100%"> -->
+
+        <br>
+        <br>
+        <h2>Reject:</h2>
+        <div class="resource">
+            
+            <p> It is used in the situations where our operation is failed. We can pass our error as an argument inside it. It is used to handle the error in promises. Error can be caught in <i>.catch()</i> method.</p>
+       
+            <img src="./4.jpg" alt="" height="300px" width="800px">
         </div>
-        <div class="card c4">
-            <!-- <img src="./images/n4.avif" alt="nature 1" width="100%" height="100%"> -->
+    </section>
+    
+    <section id="community">
+        <h2>Disadvantage:</h2>
+        
+        
+        <p>If we want to do multiple work after sometime, then it grows vertically that’s we called <i> ‘promise chaining’</i>. So, It arises the issue of promise chaining.</p>
+    
+        <img src="./5.jpg" alt="" height="300px" width="800px">
+    </section>
+
+    <section id="community">
+        <h2>Solution:</h2>
+        
+        
+        <p>For overcome this disadvantage, We use <i>async/await</i> functions, which you can see in our next Blog.</p>
+    
+        <img src="6.jpg.png" alt="" height="400px" width="800px">
+    </section>
+    
+    <footer>
+        <div>
+            <p>&copy; Ishu Goyal</p>
+            <p>All Rights Reserved.</p>
         </div>
-        <div class="card c5">
-            <!-- <img src="./images/n5.avif" alt="nature 1" width="100%" height="100%"> -->
+        <div>
+            <p>Contact Us:</p>
+            
+            <p>
+                Moblie: 9758425558
+                
+            </p>
+            <p>Email : ishu@gmail.com</p>
         </div>
-        <div class="card c6">
-            <!-- <img src="./images/n6.avif" alt="nature 1" width="100%" height="100%"> -->
+
+        <div>
+            <p>Community</p>
+            
+            <p>
+                Web
+               
+            </p>
+            <p></p>
         </div>
-    </div>
-</main>
-<section class="banner">
-    <h3>Start Your Journey!</h3>
-    <h1>Let's Capture This World</h1>
-    <p> necessitatibus quae? Voluptates pariatur, animi commodi laboriosam totam officia consequuntur rem nobis ex eaque.</p>
-    <p> tempora ullam repudiandae necessitatibus earum?</p>
-    <div class="book">Book Trial</div>
-</section>
-<footer id="contact">
-    <div class="photo">
-        <a href="#cards"><h3>Photography</h3></a>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-    </div>
-    <div class="contact">
-        <h3>Contact Info</h3>
-        <p>ishu.goyal_cs21@gla.ac.in</p>
-        <p>2115000482</p>
-        <p>Mathura,281406</p>
-    </div>
-    <div class="news">
-        <h3>Newsletter</h3>
-        <p>Subscribe to our Newsletter</p>
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <div class="book">Subscribe</div>
-    </div>
-</footer>
+        
+
+    </footer>
 </body>
 </html>

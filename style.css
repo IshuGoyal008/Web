@@ -1,193 +1,55 @@
-*{
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: hwb(0 93% 7%);
-    user-select: none;
+    padding: 0;
+    background-color: beige;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(36, 13, 13);
-    position: fixed;
-    top: 0;
-    padding: 5px 50px;
-    flex-wrap: wrap;
-    z-index: 10;
+header {
+    background-color: #6e16e1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 2px solid black;
 }
-nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    flex-wrap: wrap;
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-nav li{
-    padding: 10px ;
-    font-size: 22px;
+h2{
+    color: black;
 }
-nav li:hover{
-    color: #300606;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
-a{
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
 }
 i{
-    color: #29d9d5;
-    font-size: 32px;
-    padding: 5px;
+    color: red;
+    font-family: cursive;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.book{
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d92929;
-    border: 2px solid #29d9d5;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: bolder;
-    text-shadow: 0px 0px 3px rgba(14, 13, 91, 0.071)
-    flex-wrap: wrap;
-}
-.book:hover{
-    background-color: rgb(101, 160, 95);
-    color: white;
-}
-main{
-    padding: 70px;
-}
-.p{
-    background-color: bisque;
+section {
     padding: 20px;
-    border-radius: 10px;
 }
-.p h2{
-    color: blue;
-    padding: 2px;
-}
-.p p{
-    color: black;
-}
-.cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    margin-top: 10px;
-
-}
-.card{
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-position: center;
-    transition: 1s;
-}
-.card:hover{
-    background-color: rgba(128, 128, 128, 0.571);
-    background-image: url("./images/cam.png");
-    background-size: 200px;
-    background-repeat: no-repeat;
-    filter: grayscale(2);
-    cursor: pointer;
+.t,.r {
+    
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.c1{
-    background-image: url("https://media.istockphoto.com/id/1330498048/photo/eco-friendly-building-in-the-modern-city-green-tree-branches-with-leaves-and-sustainable.jpg?b=1&s=170667a&w=0&k=20&c=VrdeBjkozn-s1r6YTHOVCkLqPwnDY-UHl3tLJRwueIY=");
-}
-.c2{
-    background-image: url("https://images.unsplash.com/photo-1576323850036-a0bd04a68d81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaHklMjBuYXR1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
-}
-.c3{
-    background-image: url("https://images.unsplash.com/photo-1659360244523-9cbe9efb8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBob3RvZ3JhcGh5JTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-}
-.c4{
-    background-image: url("https://media.istockphoto.com/id/1434165964/photo/common-snowdrop-galanthus-nivalis-in-springtime.jpg?b=1&s=170667a&w=0&k=20&c=KdmK6TiySfdP3Qrl9GvL5tz77K7MBdiH_2Ye0fokcQI=");
-}
-.c5{
-    background-image: url("https://plus.unsplash.com/premium_photo-1666824718396-09dfd0e5cf04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHBob3RvZ3JhcGh5JTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-}
-.c6{
-    background-image: url("https://images.unsplash.com/photo-1635732131678-70bee66c7cc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHBob3RvZ3JhcGh5JTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-}
-.banner{
-    /* height: 50vh; */
-    width: 100%;
-    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
-    background-size: cover;
+footer {
+    background-color: #333;
+    color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 70px 100px;
-}
-.banner h3{
-    color:#d92978;
-    font-size: 30px;
-    padding: 20px;
-    text-shadow: 0px 0px 3px rgb(36,13,13);
-}
-.banner h1{
-    font-size: 70px;
-    text-shadow: 2px 2px 3px black;
-}
-.banner p{
-    text-align: center;
+    justify-content:space-between;
     padding: 10px;
-    opacity: .7;
-}
-footer{
-    /* height: 50vh; */
-    background-color: rgb(36, 13, 13);
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 70px 20px;
-}
-.photo,.contact,.news{
-    width: 400px;
-    padding: 10px 20px;
-    font-size: 22px;
-}
-.photo h3,.contact h3,.news h3{
-    padding: 20px;
-}
-.photo p,.contact p,.news p{
-    padding: 10px;
-    opacity: .7;
-}
-.news input{
-    width: 300px;
-    height: 40px;
-    background-color:transparent;
-    border: 2px solid #d9297e;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 20px 0px;
-}
-@media screen and (max-width:900px) {
-    .cards{
-        grid-template-columns: 1fr 1fr;
-    }
-    main{
-        padding: 200px 50px;
-    }
-}
-@media screen and (max-width:500px ){
-    .cards{
-        grid-template-columns : 1fr;
-    }
-    main{
-        padding: 250px 10px;
-    }
+    bottom: 0;
+    width: 98vw;
+    height: 100px;
 }
